@@ -1,3 +1,6 @@
+#Compare ACLs
+#Compare Permissions
+
 $computers=Get-ADComputer -filter * -searchbase 'OU=AppDesktop,OU=RDS,OU=Windows,OU=Servers,DC=MyDomain'
 
 $referenceACL = Get-Acl -Path  \\Server16\C$\ProgramData
